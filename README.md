@@ -2,6 +2,8 @@
 
 一个 OpenAI/Anthropic 兼容的 API 服务端，背后由人工操作员通过网页管理面板回复消息。调用方以为在调用真正的 AI API，实际上每条回复都是人在写。
 
+> **注意：本项目代码完全由 AI（Claude Code）生成，未经人工编写或审查。**
+
 ## 功能
 
 - **OpenAI 兼容** — `/v1/chat/completions`、`/v1/models`
