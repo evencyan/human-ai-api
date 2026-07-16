@@ -1,5 +1,5 @@
 """
-AI API Server
+能工智人API
 =============
 OpenAI-compatible API server.
 
@@ -681,7 +681,7 @@ async def admin_panel():
 async def root():
     """Root — basic server info."""
     return {
-        "service": "AI API",
+        "service": "能工智人API",
         "version": "1.1.0",
         "docs": "/docs",
         "admin": "/admin",
@@ -870,7 +870,7 @@ def _estimate_tool_tokens(tool_calls: Optional[List[Dict]]) -> int:
 if __name__ == "__main__":
     import argparse
 
-    parser = argparse.ArgumentParser(description="AI API Server")
+    parser = argparse.ArgumentParser(description="能工智人API")
     parser.add_argument("--host", default=HOST, help=f"Bind host (default: {HOST})")
     parser.add_argument("--port", type=int, default=PORT, help=f"Bind port (default: {PORT})")
     parser.add_argument("--timeout", type=int, default=REQUEST_TIMEOUT,
@@ -882,7 +882,7 @@ if __name__ == "__main__":
     display_host = "localhost" if args.host in ("0.0.0.0", "::") else args.host
     print(rf"""
 ╔══════════════════════════════════════════════════════════╗
-║           AI API Server  v1.1                           ║
+║           能工智人API  v1.1                           ║
 ╠══════════════════════════════════════════════════════════╣
 ║  API Endpoint:  http://{display_host}:{args.port}/v1/chat/completions
 ║  Admin Panel:   http://{display_host}:{args.port}/admin

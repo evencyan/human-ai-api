@@ -1,4 +1,4 @@
-# Human AI API
+# 能工智人API
 
 一个 OpenAI/Anthropic 兼容的 API 服务端，背后由人工操作员通过网页管理面板回复消息。调用方以为在调用真正的 AI API，实际上每条回复都是人在写。
 
